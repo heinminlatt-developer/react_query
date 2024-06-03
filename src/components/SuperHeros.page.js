@@ -4,26 +4,29 @@ import axios from "axios";
 function SuperHerospage() {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
-  const [error,setError]=useState('');
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:4000/superheros").then((res) => {
-      setData(res.data);
-      setLoading(false);
-    }).catch((error)=>{
+    axios
+      .get("http://localhost:4000/superheros")
+      .then((res) => {
+        setData(res.data);
+        setLoading(false);
+      })
+      .catch((error) => {
         setError(error.message);
         setLoading(false);
-    })
+      });
   }, []);
   if (loading) {
     return (
       <div>
-        <h2 style={{alignSelf:'center'}}>...Loading</h2>
+        <h2 style={{ alignSelf: "center" }}>...Loading</h2>
       </div>
     );
   }
-  if(error){
-    return <div>Error Is:{error}</div>
+  if (error) {
+    return <div>Error Is:{error}</div>;
   }
 
   return (

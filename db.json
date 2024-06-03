@@ -1,19 +1,33 @@
 {
   "superheros": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Batman",
-      "alterEgo": ""
+      "alterEgo": "AAAAAAA"
     },
     {
-      "id": "2",
-      "name": "Superman",
-      "alterEgo": ""
+      "id": 2,
+      "name": "Supermanooo",
+      "alterEgo": "BBBBBBB"
     },
     {
-      "id": "3",
-      "name": "Wonder Woman 1",
-      "alterEgo": ""
+      "id": 3,
+      "name": "Wonder Woman ",
+      "alterEgo": "ZZZZZZZ"
+    }
+  ],
+  "brothers": [
+    {
+      "id": 1,
+      "name": "Myo Min Latt"
+    },
+    {
+      "id": 2,
+      "name": "Myo Htet Kyaw"
+    },
+    {
+      "id": 3,
+      "name": "Kyaw Hein"
     }
   ]
 }
